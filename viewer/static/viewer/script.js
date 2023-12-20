@@ -5,7 +5,7 @@ function updateTime() {
     var options = {
         weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'
     };
-    var formattedDateTime = " " + "Today is " + now.toLocaleDateString('en-EN', options);
+    var formattedDateTime = " " + "Dnes je " + now.toLocaleDateString('cs-CZ', options);
 
     dateTimeElement.textContent = formattedDateTime;
 }
@@ -13,15 +13,14 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-
 var currentMovie = 0;
 var movieImages = [
-    "/viewer/static/viewer/movies/Diehard.webp",
-    "/static/viewer/movies/superstore.jpg",
-    "/static/viewer/movies/SurvivingChristmas.jpg",
-    "/static/viewer/movies/PulpFiction.jpg",
-    "/static/viewer/movies/JustGoWithIt.jpg",
-    "/static/viewer/movies/DieGoldfische.jpg",
+    'static/images/Diehard.webp',
+    'static/images/supersotre.jpg',
+    'static/images/SurvivingChristmas.jpg',
+    'static/images/PulpFiction.jpg',
+    'static/images/JustGoWithIt.jpg',
+    'static/images/DieGoldfische.jpg'
 ];
 
 const links = [
